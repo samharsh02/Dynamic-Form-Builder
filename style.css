@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #311010;
+    background-image: url('Savin-NY-Website-Background-Web.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  h1, h3 {
+    text-align: center;
+  }
+
+  .form-builder {
+    margin-bottom: 20px;
+  }
+  
+  .form-builder select,
+  .form-builder input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .form-builder button {
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .gen {
+    position : absolute;
+    left : 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  .generated-code {
+    margin-top: 60px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    overflow-x: auto; /* Add horizontal scrolling if the content overflows */
+    word-wrap: break-word; /* Ensure long words break and wrap properly */
+  }
+  
+  .generated-code pre {
+    margin: 0;
+    white-space: pre-wrap; /* Allows the code to wrap inside the box */
+    word-wrap: break-word; /* Breaks long lines at word boundaries */
+  }
+

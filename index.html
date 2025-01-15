@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Form Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Dynamic Form Builder by Samudro</h1>
+
+ <!-- Dynamic form builder -->
+  <div class="form-builder">
+    <label for="fieldName">Field Name:</label>
+    <input type="text" id="fieldName" placeholder="e.g. email" required>
+
+    <label for="fieldType">Field Type:</label>
+    <select id="fieldType">
+      <option value="text">Text</option>
+      <option value="radio">Radio</option>
+      <option value="email">Email</option>
+      <option value="dropdown">Dropdown</option>
+      <option value="checkbox">Checkbox</option>
+      <option value="file">File</option>
+      <option value="number">Number</option>
+    </select>
+
+    <label for="fieldRequired">Required:</label>
+    <select id="fieldRequired">
+      <option value="true">True</option>
+      <option value="false">False</option>
+    </select>
+
+    <label for="fieldLabel">Field Label:</label>
+    <input type="text" id="fieldLabel" placeholder="e.g. Email Address" required>
+
+    <button onclick="addField()">Add Field</button>
+  </div>
+
+  <!-- Dynamic Table of Added Fields -->
+  <h3>Dynamic Table</h3>
+  <table id="fieldTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Label</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <!-- Generate Button -->
+  <button class ="gen" onclick="generateForm()">Generate Form</button>
+
+  <!-- Display Generated HTML Code -->
+  <div class="generated-code" id="generatedCode">
+    <h3>Generated HTML Code:</h3>
+    <pre id="htmlCode"></pre>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
